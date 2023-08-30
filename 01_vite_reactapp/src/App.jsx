@@ -1,11 +1,12 @@
 import React from "react"
-
+import Chai from "./Chai"
 function App() {
 
 
   return (
     <>
-     <h2>Hitesh here | chai aur react with vite</h2>
+    <p>Hii myself Hitesh from chai aur code</p>
+      <Chai></Chai>
     </>
   )
 }
