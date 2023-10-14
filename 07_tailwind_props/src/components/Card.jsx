@@ -16,7 +16,7 @@ export function Card(props) {
       />
       <div className="p-4">
         <h1 className="inline-flex items-center text-lg font-semibold">
-          About Macbook &nbsp;
+         {props.about} &nbsp;
         </h1>
         <p className="mt-3 text-sm text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?

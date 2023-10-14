@@ -14,8 +14,8 @@ function App() {
   return (
     <>
       <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind CSS</h1>
-      <Card username="chaiaurcode" someObj={myObj} someArr={newArr} btnText="Tap me"/>
-      <Card username="hitesh" btnText="Press me"/>
+      <Card username="chaiaurcode" someObj={myObj} someArr={newArr} btnText="Tap me" about="hello" />
+      <Card username="hitesh" btnText="Press me" about="hello1"/>
         
     </>
   )
