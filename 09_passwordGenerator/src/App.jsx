@@ -12,7 +12,7 @@ function App() {
   const passordRef = useRef(null);
 
 
-  // reuse passwordGenerator function using useCallback hook
+  // reuse passwordGenerator function using useCallback ho4ok
   const passwordGenerator = useCallback(() => {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -28,7 +28,7 @@ function App() {
     }
     setPassword(pass)
 
-  }, [length, numberAllowed, charAllowed, setPassword])
+  }, [length, numberAllowed, charAllowed, setPassword]) //optimize
 
 
   // run karne wale hook

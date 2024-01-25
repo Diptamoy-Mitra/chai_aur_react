@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <p>Hii myself Hitesh from chai aur code {username}</p>
-      <Chai></Chai>
+      <Chai />
     </>
   )
 }
