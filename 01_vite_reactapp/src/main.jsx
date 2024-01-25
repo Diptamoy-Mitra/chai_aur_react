@@ -18,25 +18,25 @@ function MyApp() {
 // }
 
 
-const anotherElement=(
-    <a href="https://google.com" target='__blank'>Visit google</a>
+const anotherElement = (
+  <a href="https://google.com" target='__blank'>Visit google</a>
 
 )
 
 //following this way we can create react element
-const aontherUser="   hiiiiiiiiiiiiiiiiiii"
-const reactElement=React.createElement(
+const aontherUser = "   hiiiiiiiiiiiiiiiiiii"
+const reactElement = React.createElement(
   'a',
-   {href: 'https://google.com', target:'_blank'},
-    'Click me to visit google',
-    aontherUser
+  { href: 'https://google.com', target: '_blank' },
+  'Click me to visit google',
+  aontherUser 
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
- 
-   
-  // anotherElement,
-     reactElement,
-    // <App />
+
+
+  // anotherElement,  
+  reactElement,  
+  // <App />
  
 )
