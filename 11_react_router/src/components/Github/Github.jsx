@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 
 function Github() {
-  const data = useLoaderData()
+  const data = useLoaderData() //data do //eturns the loader data for the nearest ancestor Route loader
+
+  
   // const [data, setData] = useState([])
   // useEffect(() => {
   //   fetch('https://api.github.com/users/Diptamoy-Mitra')
