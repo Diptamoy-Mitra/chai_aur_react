@@ -37,7 +37,7 @@ export class Service {
     }
   }
 
-  //update document
+  //update document  //slug--->document id
   async updatePost(slug, { title, content, featuredImage, status }) {
     try {
 
@@ -76,6 +76,8 @@ export class Service {
       return false
     }
   }
+
+  //get post
   async getPost(slug) {
     try {
 

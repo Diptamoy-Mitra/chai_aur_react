@@ -4,6 +4,7 @@ import authService from "./appwrite/auth"
 import { login, logout } from "./store/authSlice"
 import Header from '../src/components/Header/Header'
 import Footer from "./components/Footer/Footer"
+import { Outlet } from "react-router-dom"
 function App() {
      //    console.log(import.meta.env.VITE_APPWRITE_URL) 
      const [loading, setLoading] = useState(true)
@@ -24,6 +25,7 @@ function App() {
 
 
 
+               
      }, [])
 
 
@@ -32,7 +34,8 @@ function App() {
                <div className="w-full block border  border-black">
                     <Header />
                     <main>
-                         TODO
+                         {/* <Outlet /> */}
+                         Todo
                     </main>
                     <Footer />
 
