@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { useTodo } from '../contexts/TodoContext';
 
+
+
+//props todo comes from app.jsx
 function TodoItem({ todo }) {
     const [isTodoEditable, setIsTodoEditable] = useState(false)
     const [todoMsg, setTodoMsg] = useState(todo.todo)
@@ -38,12 +41,16 @@ function TodoItem({ todo }) {
             <button
                 className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
                 onClick={() => {
-                    if (todo.completed) return;
 
+                    //if todo mark as complete then can't edit
+                    if (todo.completed) return;
+                    
+                    //if press edit button then edit todo
                     if (isTodoEditable) {
                         editTodo();
-                    } else setIsTodoEditable((prev) => !prev);
+                    } else setIsTodoEditable((prev) => !prev); //press then can edit
                 }}
+                 //if todo mark as complete then diabled edit button
                 disabled={todo.completed}
             >
                 {isTodoEditable ? "📁" : "✏️"}

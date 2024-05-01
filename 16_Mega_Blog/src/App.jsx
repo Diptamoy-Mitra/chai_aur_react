@@ -30,10 +30,10 @@ function App() {
 
 
      return !loading ? (
-          <div className="min-h-screen flex flex-wrap  bg-gray-300 border border-pink-800 content-between">
-               <div className="w-full block border  border-black">
+          <div className="min-h-screen flex flex-wrap   content-between">
+               <div className="w-full block ">
                     <Header />
-                    <main>
+                    <main className="h-full">
                          {/* <Outlet /> */}
                          Todo
                     </main>

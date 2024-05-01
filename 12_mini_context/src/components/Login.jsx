@@ -6,7 +6,7 @@ const Login = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
-  const { setUser } = useContext(UserContext)
+  const { setUser } = useContext(UserContext) //this is comes from context store
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -8,9 +8,11 @@ import { logout } from '../../store/authSlice'
 const LogoutBtn = () => {
 
   const dispatch = useDispatch()
+  //handle logout state
   const logoutHandler = () => {
+    //actually in authservice logout is promise
     authService.logout().then(() => {
-      dispatch(logout())
+      dispatch(logout()) //update the state as logout
     })
   }
 
