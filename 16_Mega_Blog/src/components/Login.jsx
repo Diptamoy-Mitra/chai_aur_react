@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import authService from '../appwrite/auth'
 import { useDispatch } from 'react-redux'
 import { login as authLogin } from '../store/authSlice'
@@ -30,7 +30,7 @@ function Login() {
 
                 //store user data into store if present
                 if (userData) {
-                    dispatch(authLogin( userData ));
+                    dispatch(authLogin(userData));
                     navigate("/")
                 }
             }

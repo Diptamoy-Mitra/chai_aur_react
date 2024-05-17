@@ -43,7 +43,7 @@ function Header() {
 
 
   return (
-    <header className='py-3 shadow bg-gray-500'>
+    <header className='py-3 shadow bg-gray-400'>
 
       <Container>
         <nav className='flex'>
@@ -57,7 +57,7 @@ function Header() {
               navItems.map((item) => (
                 item.active ? (
                   <li key={item.name} className='mr-4'>
-                    <button className='' onClick={() => navigate(item.slug)}>
+                    <button className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full' onClick={() => navigate(item.slug)}>
                       {item.name}
                     </button>
                   </li>
@@ -67,7 +67,7 @@ function Header() {
             }
             {
               authStatus && (
-                <li>
+                <li className=''>
                   <LogoutBtn />
                 </li>
               )

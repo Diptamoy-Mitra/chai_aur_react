@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button({ chldren, type = 'button', bgColor = 'bg-blue-600',
+function Button({ children, type = 'button', bgColor = 'bg-blue-600',
   textColor = 'text-white',
   className = '',
   ...props
@@ -8,8 +8,8 @@ function Button({ chldren, type = 'button', bgColor = 'bg-blue-600',
 }) {
   return (
     <button className={`px-4 py-2 rounded-lg ${className} ${bgColor} ${textColor}`} {...props}>
-      {/* text render here */}
-      {chldren} 
+      {/* button text render here */}
+      {children} 
     </button>
   )
 }
